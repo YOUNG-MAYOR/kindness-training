@@ -1,0 +1,2 @@
+# kindness-training
+KINDNESS TRAINING INSTITUTE
