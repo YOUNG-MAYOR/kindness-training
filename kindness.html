@@ -203,16 +203,11 @@
             text-decoration: none;
         }
 
-        .logo-placeholder {
+        .logo-image {
             width: 50px;
             height: 50px;
-            background: linear-gradient(135deg, #0A2540, #D4AF37);
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
+            object-fit: cover;
             border: 2px solid var(--accent);
         }
 
@@ -737,7 +732,7 @@
     <header>
         <div class="container nav-container">
             <a href="#" class="logo-area" onclick="switchPage('home')">
-                <div class="logo-placeholder">K</div>
+                <img src="icons/ChatGPT Image Jun 12, 2026, 03_37_29 PM.png" alt="Kindness Institute Logo" class="logo-image">
                 <div class="logo-text">
                     <h1>KINDNESS</h1>
                     <span>COMPUTER TRAINING INSTITUTE</span>
@@ -846,11 +841,11 @@
                 <div class="grid-3" style="margin-bottom: 4rem;">
                     <div class="card">
                         <h3>Our Mission</h3>
-                        <p style="margin-top:1rem;">To deliver outstanding technical computer training that drives economic self-sufficiency, builds real professional mastery, and unlocks career access points.</p>
+                        <p style="margin-top:1rem;">To deliver outstanding technical computer training that drives economic self-sufficiency, builds real professional mastery, and unlocks career [...]
                     </div>
                     <div class="card">
                         <h3>Our Vision</h3>
-                        <p style="margin-top:1rem;">To rank as the premier hub for technological talent refinement across the continent, globally trusted for producing high-competence innovators.</p>
+                        <p style="margin-top:1rem;">To rank as the premier hub for technological talent refinement across the continent, globally trusted for producing high-competence innovators.[...]
                     </div>
                     <div class="card">
                         <h3>Core Values</h3>
@@ -860,13 +855,13 @@
 
                 <div class="card" style="margin-bottom: 4rem; display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
                     <div style="flex: 1; min-width: 250px; text-align: center;">
-                        <div style="width: 150px; height: 150px; background: #e2e8fo; border-radius: 50%; margin: 0 auto 1rem; display:flex; align-items:center; justify-content:center; background: linear-gradient(var(--accent), var(--primary)); color:white; font-size:3rem;"><i class="fa-solid fa-user-tie"></i></div>
+                        <img src="icons/ChatGPT Image Jun 12, 2026, 03_37_29 PM.png" alt="Director" style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto 1rem; object-fit: cover;">
                         <h4>Director's Message</h4>
                         <small style="color:var(--accent);">Executive Director, KCTI</small>
                     </div>
                     <div style="flex: 2; min-width: 300px;">
                         <blockquote style="font-style: italic; border-left: 4px solid var(--accent); padding-left: 1.5rem; font-size: 1.1rem;">
-                            "At Kindness Computer Training Institute, we operate under the resolute conviction that tech access completely remodels lives. We don't simply read code from boards; we cultivate deep, confident analytical thinkers ready to steer modern global infrastructure ecosystems flawlessly."
+                            "At Kindness Computer Training Institute, we operate under the resolute conviction that tech access completely remodels lives. We don't simply read code from boards; w[...]
                         </blockquote>
                     </div>
                 </div>
@@ -930,7 +925,7 @@
                     <div class="card course-card" data-cat="development">
                         <div class="course-img-mock"><i class="fa-solid fa-code"></i><span class="course-badge">Development</span></div>
                         <h3>Web Design & Development</h3>
-                        <p>Build professional, modern, responsive front-end customer portals leveraging HTML5 systems architecture, semantic CSS structures, and interactive custom JavaScript implementations.</p>
+                        <p>Build professional, modern, responsive front-end customer portals leveraging HTML5 systems architecture, semantic CSS structures, and interactive custom JavaScript impl[...]
                         <div class="course-meta"><span><i class="fa-solid fa-clock"></i> 12 Weeks</span><span>Full-Stack Ready</span></div>
                         <button class="btn btn-primary" style="margin-top:1.5rem;" onclick="switchPage('admissions')">Enroll Now</button>
                     </div>
@@ -998,56 +993,73 @@
             <section class="container">
                 <div class="section-header">
                     <h2>Admission Portal</h2>
-                    <p>Begin your application to join our next cohort of digital innovators</p>
+                    <p>Apply to your favorite program today and start your transformation journey</p>
                 </div>
 
                 <div class="form-grid">
                     <div>
-                        <h3 style="margin-bottom: 1.5rem;">Enrollment Requirements</h3>
-                        <ul style="padding-left:1.5rem; margin-bottom: 2rem; display:grid; gap:1rem;">
-                            <li>A functional laptop computer (Minimum Core i3 processor or equivalent, 8GB RAM recommended).</li>
-                            <li>A valid government-issued identification profile or high school diploma card.</li>
-                            <li>Basic reading, documentation processing, and logical observation tracking comprehension.</li>
-                            <li>Passionate curiosity to resolve hard, abstract operational issues with software tooling.</li>
-                        </ul>
-                        
-                        <div class="card" style="border-left: 4px solid var(--accent);">
-                            <h4>Tuition Policy Announcement</h4>
-                            <p>Flexible instalment payment schedules are available for our long-term web development and data science programs to support all incoming students.</p>
+                        <h3 style="margin-bottom: 1.5rem;">Get in Touch</h3>
+                        <p style="margin-bottom: 1.5rem; color: #475569;">Have questions? Our admissions team is ready to help you choose the perfect program for your career goals.</p>
+                        <div style="margin: 1.5rem 0; display: flex; gap: 1rem; align-items: start;">
+                            <i class="fa-solid fa-phone" style="color: var(--accent); margin-top: 0.25rem;"></i>
+                            <div>
+                                <strong>Call Us</strong>
+                                <p style="font-size: 0.9rem; color: #64748B;">+234 803 728 9774</p>
+                            </div>
+                        </div>
+                        <div style="margin: 1.5rem 0; display: flex; gap: 1rem; align-items: start;">
+                            <i class="fa-solid fa-envelope" style="color: var(--accent); margin-top: 0.25rem;"></i>
+                            <div>
+                                <strong>Email Us</strong>
+                                <p style="font-size: 0.9rem; color: #64748B;">info@kindnessinstitute.edu</p>
+                            </div>
+                        </div>
+                        <div style="margin: 1.5rem 0; display: flex; gap: 1rem; align-items: start;">
+                            <i class="fa-solid fa-location-dot" style="color: var(--accent); margin-top: 0.25rem;"></i>
+                            <div>
+                                <strong>Visit Us</strong>
+                                <p style="font-size: 0.9rem; color: #64748B;">123 Tech Avenue, Innovation Hub<br>Lagos, Nigeria</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div>
-                        <form onsubmit="handleFormSubmit(event)">
-                            <h3 style="margin-bottom: 1.5rem;">Online Registration Form</h3>
-                            <div class="form-group">
-                                <label>Full Name</label>
-                                <input type="text" class="form-control" required placeholder="John Doe">
-                            </div>
-                            <div class="form-group">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" required placeholder="john@example.com">
-                            </div>
-                            <div class="form-group">
-                                <label>Desired Program Block</label>
-                                <select class="form-control">
-                                    <option>Web Design & Development</option>
-                                    <option>Data Analysis</option>
-                                    <option>Graphic Design</option>
-                                    <option>Cybersecurity Basics</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Preferred Schedule</label>
-                                <select class="form-control">
-                                    <option>Morning Cohort (9 AM - 12 PM)</option>
-                                    <option>Afternoon Cohort (2 PM - 5 PM)</option>
-                                    <option>Weekend Intensive Block</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Submit Application</button>
-                        </form>
-                    </div>
+                    <form onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="fullname">Full Name *</label>
+                            <input type="text" id="fullname" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+234 XXX XXX XXXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="program">Select Program *</label>
+                            <select id="program" class="form-control" required>
+                                <option value="">Choose a program...</option>
+                                <option value="computer-appreciation">Computer Appreciation</option>
+                                <option value="ms-office">Microsoft Office Suite</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="web-design">Web Design & Development</option>
+                                <option value="digital-marketing">Digital Marketing</option>
+                                <option value="data-analysis">Data Analysis</option>
+                                <option value="programming">Programming Fundamentals</option>
+                                <option value="networking">Computer Networking</option>
+                                <option value="cybersecurity">Cybersecurity Basics</option>
+                                <option value="database">Database Management</option>
+                                <option value="video-editing">Video Editing</option>
+                                <option value="ai">Artificial Intelligence Fundamentals</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message (Optional)</label>
+                            <textarea id="message" class="form-control" placeholder="Tell us about your goals..." rows="4" style="resize: vertical;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent" style="width: 100%;">Submit Application <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
                 </div>
             </section>
         </div>
@@ -1055,27 +1067,58 @@
         <div id="gallery" class="app-page">
             <section class="container">
                 <div class="section-header">
-                    <h2>Campus Gallery</h2>
-                    <p>A look inside our training sessions, graduation ceremonies, and laboratories</p>
+                    <h2>Student Gallery</h2>
+                    <p>Moments of learning, growth, and achievement at our institute</p>
                 </div>
+
                 <div class="gallery-masonry">
                     <div class="gallery-item">
-                        <div class="gallery-placeholder tall"><i class="fa-solid fa-laptop-code fa-2x"></i><span>Advanced Engineering Lab</span></div>
+                        <div class="gallery-placeholder">
+                            <i class="fa-solid fa-image"></i>
+                            <small>Gallery Item</small>
+                        </div>
                     </div>
                     <div class="gallery-item">
-                        <div class="gallery-placeholder"><i class="fa-solid fa-graduation-cap fa-2x"></i><span>Graduation Ceremony</span></div>
+                        <div class="gallery-placeholder tall">
+                            <i class="fa-solid fa-image"></i>
+                            <small>Gallery Item</small>
+                        </div>
                     </div>
                     <div class="gallery-item">
-                        <div class="gallery-placeholder short"><i class="fa-solid fa-users fa-2x"></i><span>Interactive Hackathon</span></div>
+                        <div class="gallery-placeholder">
+                            <i class="fa-solid fa-image"></i>
+                            <small>Gallery Item</small>
+                        </div>
                     </div>
                     <div class="gallery-item">
-                        <div class="gallery-placeholder"><i class="fa-solid fa-chalkboard-user fa-2x"></i><span>Expert Consultation Mentorship</span></div>
+                        <div class="gallery-placeholder">
+                            <i class="fa-solid fa-image"></i>
+                            <small>Gallery Item</small>
+                        </div>
                     </div>
                     <div class="gallery-item">
-                        <div class="gallery-placeholder tall"><i class="fa-solid fa-server fa-2x"></i><span>Network Architecture Workshop</span></div>
+                        <div class="gallery-placeholder short">
+                            <i class="fa-solid fa-image"></i>
+                            <small>Gallery Item</small>
+                        </div>
                     </div>
                     <div class="gallery-item">
-                        <div class="gallery-placeholder short"><i class="fa-solid fa-lightbulb fa-2x"></i><span>Student UI/UX Design Presentations</span></div>
+                        <div class="gallery-placeholder">
+                            <i class="fa-solid fa-image"></i>
+                            <small>Gallery Item</small>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder tall">
+                            <i class="fa-solid fa-image"></i>
+                            <small>Gallery Item</small>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            <i class="fa-solid fa-image"></i>
+                            <small>Gallery Item</small>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1085,32 +1128,62 @@
             <section class="container">
                 <div class="section-header">
                     <h2>Success Stories</h2>
-                    <p>Read inspiring feedback from our alumni working across global organizations</p>
+                    <p>Hear from our graduates about their journey and career transformation</p>
                 </div>
+
                 <div class="grid-3">
                     <div class="card">
-                        <div style="color:var(--accent); margin-bottom:1rem;">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                            <img src="icons/ChatGPT Image Jun 12, 2026, 03_37_29 PM.png" alt="Student" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <h4 style="margin: 0;">Chioma Okafor</h4>
+                                <small style="color: var(--accent);">Web Developer</small>
+                            </div>
                         </div>
-                        <p>"The Web Development track completely changed my career path. I came in with zero coding knowledge, and now I work as a remote front-end developer for an international tech agency."</p>
-                        <h4 style="margin-top:1.5rem;">Blessing Samuel</h4>
-                        <small>Alumni, 2024</small>
+                        <p>"KCTI transformed my career. The hands-on training and expert mentorship helped me land my first web development role within 3 months of graduation."</p>
+                        <div style="display: flex; gap: 0.25rem; margin-top: 1rem;">
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                        </div>
                     </div>
+
                     <div class="card">
-                        <div style="color:var(--accent); margin-bottom:1rem;">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                            <img src="icons/ChatGPT Image Jun 12, 2026, 03_37_29 PM.png" alt="Student" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <h4 style="margin: 0;">Tunde Adekunle</h4>
+                                <small style="color: var(--accent);">Data Analyst</small>
+                            </div>
                         </div>
-                        <p>"The Data Analysis labs are highly practical. Working with real-world industry datasets gave me the hands-on confidence required to clear my technical interviews easily."</p>
-                        <h4 style="margin-top:1.5rem;">Emmanuel Okafor</h4>
-                        <small>Alumni, 2025</small>
+                        <p>"The data analysis program gave me practical skills that directly apply to real-world business problems. I'm now leading analytics projects at my company."</p>
+                        <div style="display: flex; gap: 0.25rem; margin-top: 1rem;">
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                        </div>
                     </div>
+
                     <div class="card">
-                        <div style="color:var(--accent); margin-bottom:1rem;">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                            <img src="icons/ChatGPT Image Jun 12, 2026, 03_37_29 PM.png" alt="Student" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <h4 style="margin: 0;">Zainab Ibrahim</h4>
+                                <small style="color: var(--accent);">Graphic Designer</small>
+                            </div>
                         </div>
-                        <p>"The flexible weekend tracking allowed me to keep my regular weekday job while building my Graphic Design and brand identity portfolio. Highly recommended!"</p>
-                        <h4 style="margin-top:1.5rem;">Aisha Musa</h4>
-                        <small>Alumni, 2024</small>
+                        <p>"Starting with zero design experience, KCTI's graphic design course equipped me with Adobe skills and portfolio pieces to launch my freelance career."</p>
+                        <div style="display: flex; gap: 0.25rem; margin-top: 1rem;">
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                            <i class="fa-solid fa-star" style="color: var(--accent);"></i>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1119,27 +1192,36 @@
         <div id="blog" class="app-page">
             <section class="container">
                 <div class="section-header">
-                    <h2>Campus News & Insights</h2>
-                    <p>Stay up to date with technology insights, community events, and institute news</p>
+                    <h2>Blog & Resources</h2>
+                    <p>Stay updated with tech trends, career tips, and industry insights</p>
                 </div>
+
                 <div class="grid-3">
                     <div class="card">
-                        <div class="course-img-mock"><i class="fa-solid fa-newspaper"></i></div>
-                        <small style="color:var(--accent);">Announcements — June 2026</small>
-                        <h3 style="margin:0.5rem 0;">Next Enrolment Cohort Registration Now Open</h3>
-                        <p>Applications for our highly anticipated summer technology cohort are now open. Secure your seat early to lock in your preferred lab scheduling slots.</p>
+                        <div style="background: linear-gradient(135deg, var(--primary), var(--primary-light)); height: 150px; border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-blog" style="font-size: 3rem; color: var(--accent);"></i>
+                        </div>
+                        <h4>Getting Started with Web Development</h4>
+                        <p style="font-size: 0.9rem; color: #64748B; margin-bottom: 1rem;">Learn the fundamentals of HTML, CSS, and JavaScript to begin your web development journey.</p>
+                        <small style="color: var(--accent);">5 min read • Jun 8, 2026</small>
                     </div>
+
                     <div class="card">
-                        <div class="course-img-mock"><i class="fa-solid fa-microchip"></i></div>
-                        <small style="color:var(--accent);">Tech Insights — May 2026</small>
-                        <h3 style="margin:0.5rem 0;">Why Prompt Engineering is the Future of Work</h3>
-                        <p>Explore how generative AI architectures are reshaping modern office workflows, and how you can position yourself to stay ahead of the curve.</p>
+                        <div style="background: linear-gradient(135deg, #7C3AED, #EC4899); height: 150px; border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-chart-line" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <h4>Data Analysis Tools You Should Know</h4>
+                        <p style="font-size: 0.9rem; color: #64748B; margin-bottom: 1rem;">Discover powerful tools like SQL, Python, and Tableau for modern data analysis.</p>
+                        <small style="color: var(--accent);">8 min read • Jun 6, 2026</small>
                     </div>
+
                     <div class="card">
-                        <div class="course-img-mock"><i class="fa-solid fa-trophy"></i></div>
-                        <small style="color:var(--accent);">Student Life — April 2026</small>
-                        <h3 style="margin:0.5rem 0;">Highlights from the 2026 Campus Hackathon</h3>
-                        <p>Check out the brilliant web solutions built by our multi-disciplinary student teams during our annual 48-hour solution building marathon.</p>
+                        <div style="background: linear-gradient(135deg, #F59E0B, #EF4444); height: 150px; border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-shield-halved" style="font-size: 3rem; color: white;"></i>
+                        </div>
+                        <h4>Cybersecurity Best Practices in 2026</h4>
+                        <p style="font-size: 0.9rem; color: #64748B; margin-bottom: 1rem;">Protect yourself and your organization with essential cybersecurity practices.</p>
+                        <small style="color: var(--accent);">6 min read • Jun 4, 2026</small>
                     </div>
                 </div>
             </section>
@@ -1148,226 +1230,203 @@
         <div id="contact" class="app-page">
             <section class="container">
                 <div class="section-header">
-                    <h2>Contact Our Team</h2>
-                    <p>Have questions? Reach out today, or visit our physical campus admissions desk</p>
+                    <h2>Contact Us</h2>
+                    <p>Get in touch with our team for inquiries and support</p>
                 </div>
-                <div class="form-grid">
-                    <div>
-                        <form onsubmit="handleFormSubmit(event)">
-                            <div class="form-group">
-                                <label>Your Name</label>
-                                <input type="text" class="form-control" required placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" required placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <label>Message</label>
-                                <textarea class="form-control" rows="5" required placeholder="How can we help you?"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
-                    <div style="display:flex; flex-direction:column; gap:2rem;">
-                        <div class="card">
-                            <h4><i class="fa-solid fa-location-dot" style="color:var(--accent); margin-right:0.5rem;"></i> Our Location</h4>
-                            <p style="margin-top:0.5rem;">* Sharada Phase II Industrial Area, Kano State Nigeria</p>
-			    <p style="margin-top:0.5rem;">* Dorayi Sheikh Ja'afar Road, Gidan Shanu Street, New Service, Sunusi Plaza, Kumbotso L.G.A Kano State, Nigeria</p>
 
-                        </div>
-                        <div class="card">
-                            <h4><i class="fa-solid fa-envelope" style="color:var(--accent); margin-right:0.5rem;"></i> Communications</h4>
-                            <p style="margin-top:0.5rem;">Inquiries: info@kindnessinstitute.edu<br>Support: desk@kindnessinstitute.edu <br>Call: +234 803 728 9774</p>
-                        </div>
-                        <div class="card">
-                            <h4><i class="fa-solid fa-map" style="color:var(--accent); margin-right:0.5rem;"></i> Campus Location Map</h4>
-                            <div style="width:100%; height:150px; background:linear-gradient(45deg, #1e293b, #334155); margin-top:1rem; border-radius:8px; display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.4);">
-                                <i class="fa-solid fa-earth-africa fa-2x" style="margin-right:0.5rem;"></i> [Interactive Map Placeholder]
-                            </div>
-                        </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+                    <div class="card" style="text-align: center;">
+                        <i class="fa-solid fa-phone" style="font-size: 2rem; color: var(--accent); margin-bottom: 1rem; display: block;"></i>
+                        <h4>Phone</h4>
+                        <p style="margin-bottom: 0;">+234 803 728 9774</p>
+                        <p style="font-size: 0.85rem; color: #64748B;">Mon - Sat: 8:00 AM - 5:00 PM</p>
                     </div>
+
+                    <div class="card" style="text-align: center;">
+                        <i class="fa-solid fa-envelope" style="font-size: 2rem; color: var(--accent); margin-bottom: 1rem; display: block;"></i>
+                        <h4>Email</h4>
+                        <p style="margin-bottom: 0;">info@kindnessinstitute.edu</p>
+                        <p style="font-size: 0.85rem; color: #64748B;">We'll respond within 24 hours</p>
+                    </div>
+
+                    <div class="card" style="text-align: center;">
+                        <i class="fa-solid fa-location-dot" style="font-size: 2rem; color: var(--accent); margin-bottom: 1rem; display: block;"></i>
+                        <h4>Address</h4>
+                        <p style="margin-bottom: 0;">123 Tech Avenue</p>
+                        <p style="font-size: 0.85rem; color: #64748B;">Lagos, Nigeria</p>
+                    </div>
+                </div>
+
+                <div class="verification-box">
+                    <i class="fa-solid fa-certificate" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i>
+                    <h3>Certified Excellence</h3>
+                    <p>Our institute is accredited by the National Board for Technical Education (NBTE) and recognized globally for quality technical training.</p>
+                    <button class="btn btn-accent" style="margin-top: 1rem;">Verify Our Credentials</button>
                 </div>
             </section>
         </div>
 
-        <section style="background: rgba(30, 58, 138, 0.03);">
-            <div class="container">
-                <div class="verification-box">
-                    <i class="fa-solid fa-shield-halved" style="color:var(--accent); font-size: 3rem; margin-bottom: 1.5rem;"></i>
-                    <h2>Instant Graduate ID Validation</h2>
-                    <p style="color:#94A3B8; margin: 0.5rem 0 2rem;">Employers can easily verify student certification credentials instantly online.</p>
-                    <div style="display:flex; gap:0.5rem; justify-content:center; max-width:450px; margin:0 auto;">
-                        <input type="text" class="form-control" id="certIdInput" placeholder="Enter Registration Serial ID" style="background:rgba(255,255,255,0.1); color:white; border-color:rgba(255,255,255,0.2);">
-                        <button class="btn btn-accent" onclick="verifyCertificate()">Verify</button>
-                    </div>
-                    <div id="verifyResult" style="margin-top:1.5rem; font-weight:700;"></div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
-    <a href="https://wa.me/#" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
     <footer>
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <div class="logo-area" style="margin-bottom:1.5rem;">
-                    <div class="logo-placeholder">K</div>
-                    <div class="logo-text">
-                        <h1 style="color:white;">KINDNESS</h1>
-                        <span>COMPUTER TRAINING INSTITUTE</span>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+                        <img src="icons/ChatGPT Image Jun 12, 2026, 03_37_29 PM.png" alt="Kindness Institute Logo" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <strong style="color: white;">KINDNESS</strong>
+                            <small style="display: block; color: var(--accent);">COMPUTER TRAINING INSTITUTE</small>
+                        </div>
                     </div>
+                    <p style="margin-bottom: 1rem;">Empowering the next generation of digital professionals through world-class technical education and hands-on experience.</p>
                 </div>
-                <p>Equipping global technical professionals with highly practical skills, real-world industry expertise, and internationally recognized certification credentials.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Quick Exploration</h4>
-                <ul>
-                    <li><a href="#" onclick="switchPage('about')">About Us</a></li>
-                    <li><a href="#" onclick="switchPage('courses')">Course Directory</a></li>
-                    <li><a href="#" onclick="switchPage('admissions')">Admissions</a></li>
-                    <li><a href="#" onclick="switchPage('contact')">Contact Support</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Programs</h4>
-                <ul>
-                    <li><a href="#" onclick="switchPage('courses')">Web Engineering</a></li>
-                    <li><a href="#" onclick="switchPage('courses')">Data Management</a></li>
-                    <li><a href="#" onclick="switchPage('courses')">Creative Graphic Design</a></li>
-                    <li><a href="#" onclick="switchPage('courses')">Cybersecurity Basics</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Stay Connected</h4>
-                <p style="font-size:0.9rem; margin-bottom:1rem;">Subscribe to receive cohort notifications and scholarship opportunities.</p>
-                <div style="display:flex; gap:0.25rem;">
-                    <input type="email" class="form-control" placeholder="Email" style="padding:0.5rem; background:#111827; border-color:#1F2937; color:white;">
-                    <button class="btn btn-primary" style="padding:0.5rem 1rem;" onclick="alert('Thank you for subscribing!')"><i class="fa-solid fa-paper-plane"></i></button>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#" onclick="switchPage('home')">Home</a></li>
+                        <li><a href="#" onclick="switchPage('about')">About Us</a></li>
+                        <li><a href="#" onclick="switchPage('courses')">Courses</a></li>
+                        <li><a href="#" onclick="switchPage('gallery')">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#" onclick="switchPage('courses')">Web Design</a></li>
+                        <li><a href="#" onclick="switchPage('courses')">Data Science</a></li>
+                        <li><a href="#" onclick="switchPage('courses')">Graphic Design</a></li>
+                        <li><a href="#" onclick="switchPage('courses')">Cybersecurity</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="tel:+234803728974">+234 803 728 9774</a></li>
+                        <li><a href="mailto:info@kindnessinstitute.edu">info@kindnessinstitute.edu</a></li>
+                        <li><a href="#">123 Tech Avenue, Lagos</a></li>
+                        <li><a href="#">Mon - Sat: 8:00 AM - 5:00 PM</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 Kindness Computer Training Institute. All Rights Reserved. Built for high-performance impact.</p>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kindness Computer Training Institute. All rights reserved. | <a href="#" style="color: var(--accent); text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: var(--accent); text-decoration: none;">Terms of Service</a></p>
             </div>
         </div>
     </footer>
 
+    <a href="https://wa.me/2348037289774" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
     <script>
-        // Tab Page Switcher Engine
-        function switchPage(pageId, element) {
+        // Page Switching Logic
+        function switchPage(pageName, element = null) {
             // Hide all pages
             const pages = document.querySelectorAll('.app-page');
             pages.forEach(page => page.classList.remove('active-page'));
             
-            // Show target page
-            const targetPage = document.getElementById(pageId);
-            if(targetPage) {
-                targetPage.classList.add('active-page');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Show selected page
+            const selectedPage = document.getElementById(pageName);
+            if (selectedPage) {
+                selectedPage.classList.add('active-page');
             }
-
-            // Sync navigation active links styling
-            if(element) {
-                const links = document.querySelectorAll('.nav-link');
-                links.forEach(link => link.classList.remove('active'));
+            
+            // Update nav active state
+            if (element) {
+                document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
                 element.classList.add('active');
             }
-
-            // Close mobile drawer menu automatically if open
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+            
+            // Close mobile menu
             document.getElementById('mainNav').classList.remove('mobile-active');
         }
-
-        // Mobile Menu Navigation Toggle
+        
+        // Mobile Menu Toggle
         function toggleMobileMenu() {
             const nav = document.getElementById('mainNav');
             nav.classList.toggle('mobile-active');
         }
 
-        // Dark/Light Theme Switching Configuration Engine
-        function toggleTheme() {
-            const body = document.documentElement;
-            const themeBtn = document.getElementById('themeBtn');
-            
-            if (body.getAttribute('data-theme') === 'dark') {
-                body.removeAttribute('data-theme');
-                themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
-            } else {
-                body.setAttribute('data-theme', 'dark');
-                themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
-            }
+        // Counter Animation
+        function animateCounter() {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                let current = 0;
+                const increment = target / 50;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 30);
+            });
         }
 
-        // Dashboard Course Filter System Matrix
+        // Run counter animation when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            animateCounter();
+        });
+
+        // Course Filter Logic
         function filterCourses(category) {
             const cards = document.querySelectorAll('.course-card');
             const buttons = document.querySelectorAll('.filter-btn');
             
+            // Update button active states
             buttons.forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
-
+            
+            // Filter cards
             cards.forEach(card => {
-                if(category === 'all' || card.getAttribute('data-cat') === category) {
-                    card.style.display = 'flex';
+                if (category === 'all' || card.getAttribute('data-cat') === category) {
+                    card.style.display = 'block';
                 } else {
                     card.style.display = 'none';
                 }
             });
         }
 
-        // Interactive Form Handler Mockup
+        // Theme Toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Update button icon
+            const themeBtn = document.getElementById('themeBtn');
+            if (newTheme === 'dark') {
+                themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            } else {
+                themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            }
+        }
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+
+        // Form Submission Handler
         function handleFormSubmit(e) {
             e.preventDefault();
-            alert('Success! Your data has been securely logged with the admissions unit. A representative will contact you via email shortly.');
+            alert('Thank you for your application! We will contact you within 24 hours.');
             e.target.reset();
         }
-
-        // Student Certificate Mockup Verification Verification Logic
-        function verifyCertificate() {
-            const input = document.getElementById('certIdInput').value.trim();
-            const resultBox = document.getElementById('verifyResult');
-            
-            if(input === "") {
-                resultBox.style.color = "var(--accent)";
-                resultBox.innerText = "Please enter a registration certificate number tracking sequence.";
-                return;
-            }
-
-            // Interactive simulation verification display sequence
-            resultBox.style.color = "#25D366";
-            resultBox.innerHTML = `<i class="fa-solid fa-circle-check"></i> Credential Match Found: Verified Graduate Status — Class of 2025`;
-        }
-
-        // Animated Statistics Counter Engine Setup
-        function initCounters() {
-            const counters = document.querySelectorAll('.counter');
-            counters.forEach(counter => {
-                const target = +counter.getAttribute('data-target');
-                let count = 0;
-                const speed = target / 50; // Dynamic speed adjustments
-
-                const updateCount = () => {
-                    if(count < target) {
-                        count = Math.ceil(count + speed);
-                        counter.innerText = count + (target > 90 && target < 100 ? "%" : "+");
-                        setTimeout(updateCount, 20);
-                    } else {
-                        counter.innerText = target + (target > 90 && target < 100 ? "%" : "+");
-                    }
-                };
-                updateCount();
-            });
-        }
-
-        // Initialize elements on load
-        window.onload = function() {
-            initCounters();
-        };
     </script>
 </body>
 </html>
